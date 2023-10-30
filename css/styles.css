@@ -98,5 +98,25 @@ dl, dt, dd{
 }
 
 .weekly-quote > *{
-    color: white;
+    background-color: white;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.weekly-reflection{
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.001%;
+}
+
+.weekly > *{
+    padding: 0;
+}
+
+.weekly-reflection > h1{
+    text-decoration:underline;
+    text-align: center;
 }
