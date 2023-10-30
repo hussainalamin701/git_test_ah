@@ -1,0 +1,102 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    display:grid;
+    
+   grid-template: 
+      "header header header header" 10em
+      "hero hero hero hero" 50vh
+      ". main main ." auto
+      "footer footer footer footer" 10em
+     / 1fr 5fr 2fr 1fr;
+
+     color: white;
+}
+  
+header{
+    grid-area: header;
+}
+
+.hero{
+    grid-area: hero;
+}
+
+main{
+    grid-area: main;
+
+    background-color: rgb(220, 191, 191);
+
+    padding: 10px;
+}
+
+h3{
+    color: white;
+}
+
+.card-content > *{
+    color: black;
+}
+
+footer{
+    grid-area: footer;
+}
+
+footer > *{
+    color: white;
+    text-decoration: none;
+}
+
+header, footer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background-color: black;
+}
+
+header > p{
+    color: white;
+}
+
+ul > li{
+    color: black;
+}
+
+.hero{
+    grid-area: hero;
+     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/308367/gridarea-hero-bg.jpg);
+     display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.hero > ul > li{
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+
+    font-weight: 800%;
+}
+  
+th, td {
+    border: 0.1px solid black;
+}
+
+dl, dt, dd{
+    color: black;
+}
+
+.weekly-quote > *{
+    color: white;
+}
